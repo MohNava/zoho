@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assessment Test 2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div id="startScreen" class="card">
+        <h1>Assessment Test-2</h1>
+        <input type="text" id="candidateName" placeholder="Enter Candidate Name" required>
+
+<input type="email" id="candidateEmail" placeholder="Enter Email ID" required>
+
+<input type="tel" id="candidatePhone" placeholder="Enter Phone Number" maxlength="10" required>
+
+<button onclick="startTest()">Start Assessment</button>
+    </div>
+
+    <div id="quizScreen" class="card hidden">
+        <div class="top-bar">
+            <div id="timer">45:00</div>
+            <div id="progressText">Question 1 / 40</div>
+        </div>
+
+        <div class="progress">
+            <div id="progressBar"></div>
+        </div>
+
+        <h2 id="question"></h2>
+
+        <div id="options"></div>
+
+        <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div id="resultScreen" class="card hidden">
+        <h1>Assessment Submitted</h1>
+        <h2 id="candidate"></h2>
+        <h3 id="score"></h3>
+        <h2 id="status"></h2>
+    </div>
+
+</div>
+<script src="questions.js"></script>
+<script src="script.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
